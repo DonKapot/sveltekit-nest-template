@@ -1,0 +1,31 @@
+{
+  "name": "sveltekit-nest-template",
+  "version": "1.0.0",
+  "description": "Setup for sveltekit + nestjs",
+  "main": "index.js",
+  "scripts": {
+    "run-client": "cd ./client && npm run dev",
+    "run-server": "cd ./server && npm run start:dev",
+    "open-client": "\"start http://localhost:5173/\"",
+    "start": "concurrently -c 'red,blue,green' 'npm:run-*' 'npm:open-*'",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonKapot/sveltekit-nest-template.git"
+  },
+  "keywords": [
+    "template",
+    "sveltekit",
+    "nestjs"
+  ],
+  "author": "Alexei Danilin (Alex Dan)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DonKapot/sveltekit-nest-template/issues"
+  },
+  "homepage": "https://github.com/DonKapot/sveltekit-nest-template#readme",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
